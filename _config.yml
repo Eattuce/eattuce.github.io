@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 title: MelonDog # the main title
 
-tagline: MelonDog wrote something here # it will display as the sub-title
+tagline: Mr.MD says... # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -35,11 +35,11 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: lettuce
-  email: example@domain.com # change to your email address
+  email: j92647120@126.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://github.com/username # change to your github homepage
-    - https://twitter.com/username # change to your twitter homepage
+    # - https://twitter.com/username # change to your twitter homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -96,7 +96,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: ./assets/img/melondog.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

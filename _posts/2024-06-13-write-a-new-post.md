@@ -6,6 +6,7 @@ categories: [Blogging, Tutorial]
 tags: [writing]
 render_with_liquid: false
 last_modified_at: 2024-06-13 13:20:00 +0800
+media_subpath: /assets/img/dst
 ---
 
 This tutorial will guide you how to write a post in the _Chirpy_ template, and it's worth reading even if you've used Jekyll before, as many features require specific variables to be set.
