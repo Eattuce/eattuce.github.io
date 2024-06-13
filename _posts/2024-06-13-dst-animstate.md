@@ -4,13 +4,13 @@ description: AnimState 浅析
 author: eattuce
 date: 2024-06-13 15:10:00 +0800
 categories: [Don't Starve Together, Tutorial]
-tags: [dst, tip]
+tags: [dst, tips]
 render_with_liquid: false
 last_modified_at: 2024-06-13 15:20:00 +0800
 ---
 
 
-> 一个非常重要的事情：Spriter创建和打开的动画文件.scml其实也是一个类似 .xml .yaml的标记语言。
+> Spriter创建和打开的动画文件.scml其实也是一个类似 .xml .yaml的标记语言。
 {: .prompt-tip }
 
 

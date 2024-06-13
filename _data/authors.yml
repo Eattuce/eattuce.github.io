@@ -7,6 +7,16 @@
 # -------------------------------------
 
 eattuce:
-  name: MelonDog
-  twitter: MelonDog
+  name: Eattuce
+  twitter: null
   url: https://github.com/eattuce/
+
+melondog:
+  name: MelonDog
+  twitter: null
+  url: https://steamcommunity.com/profiles/76561198975179359/
+
+halls:
+  name: Hall_s
+  twitter: null
+  url: https://steamcommunity.com/profiles/76561198432598972/

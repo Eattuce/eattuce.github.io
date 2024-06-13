@@ -2,17 +2,21 @@
 title: 多肉植物模组指南
 description: >-
     这是一个饥荒联机版模组。最核心的内容包括可以在蘑菇农场或多肉农场种植多肉植物。
-authors: [eattuce, eattuce]
-date: 2024-06-13 00:00:00 +0800
+authors: [melondog, halls]
+date: 2023-12-01 00:00:00 +0800
 categories: [Don't Starve Together, Mods]
 tags: [dst, mods, wiki]
 render_with_liquid: false
-last_modified_at: 2024-06-13 15:20:00 +0800
+last_modified_at: 2024-06-12 15:20:00 +0800
+pin: true
 media_subpath: /assets/img/dst
 ---
 
 
 模组发布于[Steam创意工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=2441790846)(2441790846)
+
+更新信息发布于[百度贴吧](https://tieba.baidu.com/p/7318050356)
+
 
 ![img-description](/modicon.png){: w="128" h="128" }
 _模组图标_
