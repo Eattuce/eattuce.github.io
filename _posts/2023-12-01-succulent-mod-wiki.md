@@ -22,7 +22,7 @@ media_subpath: /assets/img/dst
 _模组图标_
 
 
-> 文章未更新 本文内容与实际模组内容有部分差异
+> 文章有部分内容可能与实际有偏差 仅作为参考
 {: .prompt-warning }
 
 
