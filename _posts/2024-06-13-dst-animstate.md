@@ -14,23 +14,25 @@ last_modified_at: 2024-06-13 15:20:00 +0800
 {: .prompt-tip }
 
 
-Getters
+Setters
 ```lua
-SetBank
-SetBuild
-SetScale
-SetFinalOffset
+-- .scml
+SetBank("bankName")
+-- Entity in .scml
+SetBuild("buildName")
+SetScale(x, y, z)
+SetFinalOffset(1)
 SetOrientation
 SetLayer
-SetPercent
+SetPercent(.1)
 SetTime
-SetDeltaTimeMultiplier
-SetBloomEffectHandle
+SetDeltaTimeMultiplier(2)
+SetBloomEffectHandle("shaders/anim.ksh")
 SetDefaultEffectHandle
-SetMultColour
-SetAddColour
+SetMultColour(r, g, b, a)
+SetAddColour(r, g, b, a)
 SetSymbolExchange
-SetSortOrder
+SetSortOrder(1)
 SetClientSideBuildOverrideFlag
 SetDepthBias
 SetDepthTestEnabled
@@ -50,13 +52,16 @@ SetMultiSymbolExchange
 SetDepthWriteEnabled
 SetInheritsSortKey
 SetSkin
-SetLightOverride(.5)                        --  即使在黑暗中也能看见 0.5
-SetSymbolBloom("symbol")                    --  给symbol加上 SetBloomEffectHandle("shaders/anim.ksh") 的效果 ClearSymbolBloom取消
-SetSymbolLightOverride("symbol", 0.5)       --  给symbol加上 LightOverride(0.5) 的效果
+--  穿透黑暗的高亮0.5
+SetLightOverride(.5)
+--  symbol单独SetBloomEffectHandle("shaders/anim.ksh")
+SetSymbolBloom("symbol")
+--  symbol单独LightOverride(.5)
+SetSymbolLightOverride("symbol", .5)
 ```
 
 
-Setters
+Getters
 ```lua
 GetSortOrder
 GetCurrentAnimationTime
@@ -68,42 +73,54 @@ GetInheritsSortKey
 GetSkinBuild
 GetCurrentFacing
 GetSymbolOverride
-GetBuild
+GetBuild()
 GetSymbolPosition
 ```
 
 
 Other
 ```lua
-Show
-Hide
-HideSymbol
-ShowSymbol
-PlayAnimation
-PushAnimation
-Pause
-Resume
-OverrideSymbol
-OverrideMultColour
-IsCurrentAnimation
-AnimDone
-BuildHasSymbol
-IsSymbolOverridden
+Show()
+Hide()
+HideSymbol("symbol")
+ShowSymbol("symbol")
+PlayAnimation("anim"[, false])
+PushAnimation("anim"[, true])
+Pause()
+Resume()
+
+-- overrides and clears
+OverrideSymbol("originalSymbolName", "buildName", "newSymbolName")
+OverrideMultColour(r, g, b, a)
 OverrideShade
-CompareSymbolBuilds
 OverrideSkinSymbol
-AssignItemSkins
 OverrideItemSkinSymbol
+
+ClearOverrideSymbol("originalSymbolName")
+ClearAllOverrideSymbols()
+ClearBloomEffectHandle()
+-- 反SetSymbolBloom
+ClearSymbolBloom("symbolName")
+ClearDefaultEffectHandle
+-- 反AddOverrideBuild
+ClearOverrideBuild("bankName")
+ClearSymbolExchanges
+
+-- 把名为bankName动画包中的动画
+-- 添加到当前实体可播放的动画列表中
+-- 比如要增加角色的动作
+-- 同名动画覆盖
+AddOverrideBuild("bankName")
+
+IsSymbolOverridden
+IsCurrentAnimation("animName")
+AnimDone()
+BuildHasSymbol
+CompareSymbolBuilds
+AssignItemSkins
 UsePointFiltering
 UseColourCube
 FastForward
-AddOverrideBuild
-ClearOverrideSymbol
-ClearAllOverrideSymbols
-ClearBloomEffectHandle
-ClearDefaultEffectHandle
-ClearOverrideBuild
-ClearSymbolExchanges
 ```
 
 
