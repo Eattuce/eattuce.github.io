@@ -6,7 +6,7 @@ date: 2024-06-13 15:10:00 +0800
 categories: [Don't Starve Together, Tutorial]
 tags: [dst, tips]
 render_with_liquid: false
-last_modified_at: 2024-06-13 15:20:00 +0800
+last_modified_at: 2024-06-22 17:20:00 +0800
 ---
 
 
@@ -45,7 +45,10 @@ SetWorldSpaceAmbientLightPos
 SetManualBB
 SetHighlightColour
 SetUILightParams
-SetErosionParams
+-- 1st: [0.0-1.0] 消失部分百分比 数值越大消失得越多
+-- 2nd: [0.0-1.0] 残留部分的透明度 数值越大越透明
+-- 3rd: [0.0-1.0] 消失部分透明度 数值越大越透明 (1,0,[0-1])仅改变这一项可以调整透明度
+SetErosionParams(.5, 0.1, 1.0)
 SetClientsideBuildOverride
 SetFloatParams
 SetMultiSymbolExchange
