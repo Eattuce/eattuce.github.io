@@ -31,6 +31,7 @@ SetBloomEffectHandle("shaders/anim.ksh")
 SetDefaultEffectHandle
 SetMultColour(r, g, b, a)
 SetAddColour(r, g, b, a)
+SetSymbolMultColour(r, g, b, a)
 SetSymbolExchange
 SetSortOrder(1)
 SetClientSideBuildOverrideFlag
